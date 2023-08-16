@@ -1,10 +1,8 @@
 # .bashrc
-if [ -n "$TOOLBOX_PATH" ]; then
-    clear
-    PS1='\[\e[97;48;5;113;53m\] ⬢ \[\e[39m\]▕\[\e[0m\]\[\e[48;5;209;53m\]▏\[\e[1m\]$(echo "\w" | sed "s|$HOME|~|; s|/| > |g; s| > ||")▕\[\e[48;5;141m\]▏\$ \[\e[0m\]▏'
+if [ ! -f /run/.containerenv ]; then
+  PS1='\[\e[48;5;209;53m\] \[\e[1m\]$(echo "\w" | sed "s|$HOME|~|; s|/| > |g; s| > ||")▕\[\e[48;5;141m\]▏\$ \[\e[0m\]▏'
 else
-    clear
-    PS1='\[\e[48;5;209;53m\] \[\e[1m\]$(echo "\w" | sed "s|$HOME|~|; s|/| > |g; s| > ||")▕\[\e[48;5;141m\]▏\$ \[\e[0m\]▏'
+  PS1='\[\e[97;48;5;113;53m\] ⬢ \[\e[39m\]▕\[\e[0m\]\[\e[48;5;209;53m\]▏\[\e[1m\]$(echo "\w" | sed "s|$HOME|~|; s|/| > |g; s| > ||")▕\[\e[48;5;141m\]▏\$ \[\e[0m\]▏'
 fi
 
 # Source global definitions
