@@ -1,6 +1,6 @@
 # Cozy-Bash-Prompt (No-Fonts-Required)
 <img src="https://github.com/sandmuel/Cozy-Bash-Prompt-No-Fonts/blob/ab72153f140840baeff62f04ed47e95ce37d0e43/image.png" alt="Bash Prompt Showcase">
-Hi! I made this font for myself and others who can't or don't want to get the powerline font to get one of those nice looking prompts. (I'm on Fedora and it's not packaged right or something)
+Hi! I made this prompt for myself and others who can't or don't want to get the powerline font to get one of those nice looking prompts. (I'm on Fedora and it's not packaged right or something)
 
 # How to use?
 <p>just paste this in your .bashrc: </p>
